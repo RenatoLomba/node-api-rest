@@ -3,13 +3,13 @@ import { resolve } from 'path';
 
 dotenv.config();
 
-import './src/database';
+import './database';
 import express from 'express';
-import home from './src/routes/HomeRoutes';
-import user from './src/routes/UserRoutes';
-import token from './src/routes/TokenRoutes';
-import student from './src/routes/StudentRoutes';
-import upload from './src/routes/UploadRoutes';
+import home from './routes/HomeRoutes';
+import user from './routes/UserRoutes';
+import token from './routes/TokenRoutes';
+import student from './routes/StudentRoutes';
+import upload from './routes/UploadRoutes';
 
 class App {
   constructor() {
