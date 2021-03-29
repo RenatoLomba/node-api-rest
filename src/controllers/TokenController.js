@@ -24,7 +24,9 @@ class TokenController {
         expiresIn: process.env.TOKEN_EXPIRES,
       });
 
-      return res.status(200).json({ token });
+      const userDto = new UserDTO(user);
+
+      return res.status(200).json({ token, user: userDto });
     } catch (ex) {
       return res.status(500).json({ errors: ex.message });
     }
