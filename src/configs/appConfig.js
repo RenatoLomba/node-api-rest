@@ -1,6 +1,6 @@
 class Configs {
   constructor() {
-    this.url = `${process.env.SERVER_URL}:${process.env.SERVER_PORT}`;
+    this.url = `${process.env.SERVER_URL}`;
   }
 }
 export default new Configs();
