@@ -3,7 +3,7 @@
 class Server {
   constructor() {
     this.app = _App2.default;
-    this.port = process.env.SERVER_PORT;
+    this.port = process.env.PORT || 80;
   }
 }
 

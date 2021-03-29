@@ -3,7 +3,7 @@ import app from './App';
 class Server {
   constructor() {
     this.app = app;
-    this.port = process.env.SERVER_PORT;
+    this.port = process.env.PORT || 80;
   }
 }
 
