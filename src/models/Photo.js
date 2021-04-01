@@ -24,7 +24,7 @@ export default class Photo extends Model {
       },
       url: {
         type: Sequelize.VIRTUAL,
-        get() { return `${configs.url}/images/${this.getDataValue('filename')}`; },
+        get() { return `${configs.url}/${this.getDataValue('filename')}`; },
       },
     },
     {
