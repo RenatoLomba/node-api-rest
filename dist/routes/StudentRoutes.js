@@ -6,7 +6,7 @@ class StudentRoutes {
   constructor() {
     this.router = new (0, _express.Router)();
 
-    this.router.get('/', _ValidationMiddleware.checkToken, _StudentController2.default.index);
+    this.router.get('/', _StudentController2.default.index);
     this.router.post('/', _ValidationMiddleware.checkToken, _StudentController2.default.store);
     this.router.get('/:id', _ValidationMiddleware.checkToken, _StudentController2.default.show);
     this.router.delete('/:id', _ValidationMiddleware.checkToken, _StudentController2.default.delete);
