@@ -6,7 +6,7 @@ class StudentRoutes {
   constructor() {
     this.router = new Router();
 
-    this.router.get('/', checkToken, student.index);
+    this.router.get('/', student.index);
     this.router.post('/', checkToken, student.store);
     this.router.get('/:id', checkToken, student.show);
     this.router.delete('/:id', checkToken, student.delete);
